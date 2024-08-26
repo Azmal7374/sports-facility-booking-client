@@ -9,8 +9,8 @@ import Lottie from "lottie-react";
 import reader from '.././assets/38435-register.json'
 
 const Login = () => {
-  const [email, setEmail] = useState("emon@gmail.com");
-  const [password, setPassword] = useState("abcd1234");
+  const [email, setEmail] = useState("web@programming-hero.com");
+  const [password, setPassword] = useState("programming-hero");
   const [login, { isLoading }] = useLoginMutation();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
@@ -69,6 +69,7 @@ const Login = () => {
                   required
                   defaultValue="azmal@gmail.com"
                 />
+               
               </div>
 
               <div className="mt-4">

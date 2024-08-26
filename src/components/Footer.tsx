@@ -126,7 +126,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4">
-              © 2024 SportEase Inc. All rights reserved.
+              © 2024 SportsBooking Inc. All rights reserved.
             </p>
           </div>
         </footer>
