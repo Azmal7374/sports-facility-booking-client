@@ -3,7 +3,7 @@ const Hero = () => {
       <div>
         <section className="pt-8 lg:pt-32 ">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
-            <div className="border border-indigo-600 p-1 w-60 mx-auto rounded-full flex items-center justify-between mb-8">
+            <div className="border border-[#E8B86D] p-1 w-60 mx-auto rounded-full flex items-center justify-between mb-8">
               <span className="font-inter text-xs font-medium text-gray-900 ml-3">
                 Explore the facilities we offer.
               </span>
@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
             <a
               href="javascript:;"
-              className="w-full md:w-auto mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-center text-white rounded-full bg-button shadow-xs hover:bg-button-dark transition-all duration-500"
+              className="w-full md:w-auto mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-bold text-center text-[#E8B86D] rounded-full bg-button shadow-xs hover:bg-button-dark transition-all duration-500"
             >
               Book Now
               <svg

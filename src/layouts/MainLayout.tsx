@@ -1,7 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import ScrollToTop from "../utlis/ScrollTpTop";
+import ScrollToTop from "../utlis/ScrollToTop";
+import ScrollToTopButton from "../utlis/ScrollToTopButton";
 
 const Mainlayout = () => {
   return (
@@ -12,6 +13,7 @@ const Mainlayout = () => {
       <Outlet />
 
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 };
