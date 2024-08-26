@@ -13,7 +13,7 @@ const HowItWorks = () => {
           <div className="flex">
             <div className="mr-4 flex flex-col items-center">
               <div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-800">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#E8B86D]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -24,7 +24,7 @@ const HowItWorks = () => {
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    className="h-6 w-6 text-blue-800 dark:text-slate-200"
+                    className="h-6 w-6 text-[#E8B86D] dark:text-slate-200"
                   >
                     <path d="M12 5l0 14"></path>
                     <path d="M18 13l-6 6"></path>
@@ -48,7 +48,7 @@ const HowItWorks = () => {
           <div className="flex">
             <div className="mr-4 flex flex-col items-center">
               <div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-800">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#E8B86D]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -59,7 +59,7 @@ const HowItWorks = () => {
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    className="h-6 w-6 text-blue-800 dark:text-slate-200"
+                    className="h-6 w-6 text-[#E8B86D] dark:text-slate-200"
                   >
                     <path d="M12 5l0 14"></path>
                     <path d="M18 13l-6 6"></path>
@@ -83,7 +83,7 @@ const HowItWorks = () => {
           <div className="flex">
             <div className="mr-4 flex flex-col items-center">
               <div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-800">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#E8B86D]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -94,7 +94,7 @@ const HowItWorks = () => {
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    className="h-6 w-6 text-blue-800 dark:text-slate-200"
+                    className="h-6 w-6 text-[#E8B86D] dark:text-slate-200"
                   >
                     <path d="M12 5l0 14"></path>
                     <path d="M18 13l-6 6"></path>
@@ -117,7 +117,7 @@ const HowItWorks = () => {
           <div className="flex">
             <div className="mr-4 flex flex-col items-center">
               <div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-800">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#E8B86D]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -128,7 +128,7 @@ const HowItWorks = () => {
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    className="h-6 w-6 text-blue-800 dark:text-slate-200"
+                    className="h-6 w-6 text-[#E8B86D] dark:text-slate-200"
                   >
                     <path d="M12 5l0 14"></path>
                     <path d="M18 13l-6 6"></path>
@@ -151,7 +151,7 @@ const HowItWorks = () => {
           <div className="flex">
             <div className="mr-4 flex flex-col items-center">
               <div>
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-blue-900 bg-blue-900">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border-2 border-[#E8B86D] bg-[#E8B86D]">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

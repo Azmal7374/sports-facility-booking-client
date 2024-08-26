@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
-      <div>
-        <footer className="bg- font-sans dark:bg-gray-900">
+      <div className="">
+        <footer className="bg- font-sans bg-[#E8B86D] dark:bg-gray-900">
           <div className="container px-6 pt-12 pb-5 mx-auto">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
               <div className="sm:col-span-2">
@@ -29,13 +29,13 @@ const Footer = () => {
                 </p>
   
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                  <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
+                  <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
                     Home
                   </p>
-                  <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
+                  <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
                     Who We Are
                   </p>
-                  <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
+                  <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
                     Our Philosophy
                   </p>
                 </div>
@@ -47,13 +47,13 @@ const Footer = () => {
                 </p>
   
                 <div className="flex flex-col items-start mt-5 space-y-2">
-                  <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
+                  <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
                     Sports and Entertainment
                   </p>
-                  <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
+                  <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
                     Sports Brandings
                   </p>
-                  <p className="text-gray-600 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
+                  <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#F1F3C2]">
                     Athletics and Kit
                   </p>
                 </div>

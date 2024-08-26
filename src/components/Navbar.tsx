@@ -14,6 +14,7 @@ const Navbar = () => {
   const closeDrawer = () => setOpen(false);
 
   const user = useAppSelector(selectCurrentUser);
+  
 
   return (
     <div className="flex justify-between items-center bg-primary py-3 px-10 md:px-10 lg:px-20 shadow-xl sticky top-0 z-20">
@@ -30,7 +31,7 @@ const Navbar = () => {
           </div>
         ) : (
           <Link to={"/login"}>
-            <button className="cursor-pointer transition-all bg-button  px-4 py-1 rounded-lg border-blue-600 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+            <button className="cursor-pointer transition-all bg-button  px-4 py-1 rounded-lg  border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
               Login
             </button>
           </Link>
@@ -48,7 +49,7 @@ const Navbar = () => {
       <Drawer
         open={open}
         onClose={closeDrawer}
-        className="p-4 w-[180px]"
+        className="p-4 w-[180px] "
         placeholder={undefined}
         onPointerEnterCapture={undefined}
         onPointerLeaveCapture={undefined}

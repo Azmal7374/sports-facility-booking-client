@@ -43,7 +43,7 @@ const Testimonials = () => {
                 <img
                   src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg"
                   alt=""
-                  className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 dark:bg-gray-300"
+                  className="w-16 h-16 mb-2 -mt-16 bg-center bg-cover rounded-full dark:bg-gray-500 "
                 />
                 <p className="text-xl font-semibold leading-tight">
                   Michael Johnson
