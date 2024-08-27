@@ -76,7 +76,7 @@ const Booking = () => {
   }
 
   return (
-    <div className="bg-[#F5EDED] py-20">
+    <div className="bg-[#] py-20">
       <div className="bg-white rounded-lg overflow-hidden shadow-2xl w-[60%] mx-auto">
         <div className="p-1 bg-button"></div>
         <div className="p-8">
@@ -103,7 +103,7 @@ const Booking = () => {
               <button
                 onClick={handleCheckAvailability}
                 disabled={!selectedDate || isCheckAvailabilityLoading}
-                className="w-full px-3 py-1 tracking-wider text-white font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark"
+                className="w-full px-3 py-1 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark"
               >
                 {isCheckAvailabilityLoading ? (
                   <div className="flex gap-3 justify-center items-center text-2xl">
@@ -168,7 +168,7 @@ const Booking = () => {
                   <button
                     type="submit"
                     disabled={isCreateBookingLoading}
-                    className="mt-5 w-full px-3 py-2 tracking-wider text-white font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark"
+                    className="mt-5 w-full px-3 py-2 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark"
                   >
                     {isCreateBookingLoading ? (
                       <div className="flex gap-3 justify-center items-center text-2xl">

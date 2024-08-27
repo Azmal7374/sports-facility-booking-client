@@ -62,11 +62,11 @@ const Banner = () => {
              </Link>
 
              <Link className=" justify-center items-center flex text-[#E8B86D] border-2 font-bold  rounded-xl px-4 bg-white  font-Raleway text-[12px] md:text-sm  cursor-pointer border-[#E8B86D] duration-500 
-                hover:bg-[#daac63] hover:text-gray-800   " to="/courseCategories?category=All">
+                hover:bg-[#daac63] hover:text-gray-800   "  to={"/facilities"}>
              <button
                
               >
-                View Booking
+               Book Now
               </button></Link>
             </div>
           </div>

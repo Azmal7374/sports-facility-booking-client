@@ -47,28 +47,7 @@ const ContactUs = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1480.3350421915732!2d90.40060238874337!3d22.691750391064847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375533ac1ee93ac7%3A0x615e7e7fb6520d07!2z4Kaq4KeC4Kaw4KeN4KasIOCmmuCmsOCmleCmvuCmieCmr-CmvOCmviDgpqzgpr7gpofgpqTgp4Hgprgg4Ka44Ka-4Kay4Ka-4KauIOCmnOCmvuCmruCnhyDgpq7gprjgppzgpr_gpqbgpaQ!5e0!3m2!1sen!2sbd!4v1724671783501!5m2!1sen!2sbd"
                 ></iframe>
            
-              <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-                <div className="lg:w-1/2 px-6">
-                  <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                    ADDRESS
-                  </h2>
-                  <p className="mt-1">
-                   Barishal Bhola Higway, Barishal
-                  </p>
-                </div>
-                <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                  <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                    EMAIL
-                  </h2>
-                  <a className="text-red-500 leading-relaxed">
-                    azmal@sportsbooking.com
-                  </a>
-                  <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                    PHONE
-                  </h2>
-                  <p className="leading-relaxed">+0081799590273</p>
-                </div>
-              </div>
+            
             </div>
             <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 px-7 mt-8 md:mt-0">
               <h2 className="text-gray-900 text-2xl mb-1 font-bold title-font">
@@ -131,7 +110,7 @@ const ContactUs = () => {
                 <input
                   type="submit"
                   value="Send Message"
-                  className="bg-[#1BBF72] text-white p-2 rounded-full w-40"
+                  className="bg-[#E8B86D] text-white p-2 rounded-full w-40"
                 ></input>
               </div>
             </div>

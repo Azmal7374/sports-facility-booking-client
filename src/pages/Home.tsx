@@ -16,7 +16,7 @@ const Home = () => {
       exit={{ opacity: 0, transition: { duration: 1.5 } }}
     ></motion.div>
        <Banner/>
-      <Hero />
+      {/* <Hero /> */}
       <FeaturedFacilities />
       <HowItWorks />
       <Testimonials />
