@@ -14,10 +14,10 @@ const Footer = () => {
                     id="email"
                     type="text"
                     className="px-4 py-2 text-gray-700 bg-white border rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:outline-none"
-                    placeholder="Email Address"
+                    placeholder="Email"
                   />
   
-                  <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark focus:ring focus:ring-gray-300 focus:ring-opacity-80">
+                  <button className="w-full px-6 py-2.5 text-sm font-medium tracking-wider text-gray-800 transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-[#E8B86D] rounded-lg hover:bg-button-dark focus:ring focus:ring-gray-300 focus:ring-opacity-80">
                     Subscribe
                   </button>
                 </div>
@@ -33,10 +33,10 @@ const Footer = () => {
                     Home
                   </p>
                   <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
-                    Who We Are
+                    All Facilities
                   </p>
                   <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
-                    Our Philosophy
+                    About Me
                   </p>
                 </div>
               </div>
@@ -48,13 +48,12 @@ const Footer = () => {
   
                 <div className="flex flex-col items-start mt-5 space-y-2">
                   <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
-                    Sports and Entertainment
+                 Contact Us
                   </p>
                   <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#1A5319]">
-                    Sports Brandings
-                  </p>
+                    Sports Brand                  </p>
                   <p className="text-gray-800 transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:cursor-pointer hover:text-[#F1F3C2]">
-                    Athletics and Kit
+                    All Kits
                   </p>
                 </div>
               </div>
@@ -64,18 +63,19 @@ const Footer = () => {
   
             <div className="sm:flex sm:items-center sm:justify-between">
               <div className="flex flex-1 gap-4 hover:cursor-pointer">
+              <img
+                  src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg"
+                  width="130"
+                  height="110"
+                  alt=""
+                />
                 <img
                   src="https://www.svgrepo.com/show/303139/google-play-badge-logo.svg"
                   width="130"
                   height="110"
                   alt=""
                 />
-                <img
-                  src="https://www.svgrepo.com/show/303128/download-on-the-app-store-apple-logo.svg"
-                  width="130"
-                  height="110"
-                  alt=""
-                />
+               
               </div>
   
               <div className="flex gap-4 hover:cursor-pointer">
@@ -91,12 +91,7 @@ const Footer = () => {
                   height="30"
                   alt="tw"
                 />
-                <img
-                  src="https://www.svgrepo.com/show/303145/instagram-2-1-logo.svg"
-                  width="30"
-                  height="30"
-                  alt="inst"
-                />
+                
                 <img
                   src="https://www.svgrepo.com/show/94698/github.svg"
                   className=""
@@ -104,12 +99,7 @@ const Footer = () => {
                   height="30"
                   alt="gt"
                 />
-                <img
-                  src="https://www.svgrepo.com/show/22037/path.svg"
-                  width="30"
-                  height="30"
-                  alt="pn"
-                />
+                
                 <img
                   src="https://www.svgrepo.com/show/28145/linkedin.svg"
                   width="30"
@@ -126,7 +116,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4">
-              © 2024 SportsBooking Inc. All rights reserved.
+              © 2024 <span className="text-[#E8B86D] font-bold">SportsBooking</span> Inc. All rights reserved.
             </p>
           </div>
         </footer>
