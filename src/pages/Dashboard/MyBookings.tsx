@@ -59,7 +59,7 @@ const MyBookings = () => {
 
   return (
     <div>
-      <div className="w-full py-2 bg-secondary rounded-lg">
+      <div className="w-full bg-[#4158A6] py-2 bg-secondary rounded-lg">
         <h1 className="text-white text-xl text-center">My Bookings</h1>
       </div>
 
@@ -67,7 +67,7 @@ const MyBookings = () => {
         {bookings?.data?.map((item: any, index: number) => (
           <div
             key={index}
-            className="rounded-xl p-3 shadow-2xl hover:shadow-xl border-2 border-green-700"
+            className="rounded-xl p-3 shadow-2xl hover:shadow-xl border-2 border-[#E8B86D]"
           >
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img
@@ -83,21 +83,21 @@ const MyBookings = () => {
               </h2>
 
               <span className="text-lg flex justify-center items-center mt-4 font-bold text-gray-800 text-center">
-                ৳ {item.facility.pricePerHour} per hour
+                tk {item.facility.pricePerHour} per hour
               </span>
             </div>
 
             <div className="flex justify-center items-center gap-5 mt-3">
               <button
                 onClick={() => handleOpen(item)}
-                className="inline-block flex-1 rounded-lg bg-button p-2 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-button-dark sm:flex-none md:text-base"
+               className="w-full rounded-lg bg-[#E8B86D] p-2 px-3 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-button-dark sm:flex-none md:text-base"
               >
                 Details
               </button>
 
               <button
                 onClick={() => handleCancelBooking(item?._id)}
-                className="inline-block flex-1 rounded-lg bg-red-700 p-2 text-center text-sm font-semibold text-white outline-none transition duration-100 sm:flex-none md:text-base"
+                className="w-full mt-3 rounded-lg bg-red-700 p-2 px-3 text-center text-sm font-semibold text-white outline-none transition duration-100 sm:flex-none md:text-base"
               >
                 Cancel Booking
               </button>

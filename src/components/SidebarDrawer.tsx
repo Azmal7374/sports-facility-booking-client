@@ -56,7 +56,7 @@ const SideDrawer = () => {
             <div className="mb-2 p-4">
               <div className="mb-2 p-4 flex items-center gap-3">
                 <img
-                  src={"https://i.ibb.co/HN9NtYY/user.png"}
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1IR2XGBC_2lvTehp_LhYQ9Wj9NKkwORPfw&s"
                   className="w-[60px] h-[60px] border-2 border-[#E8B86D] rounded-full object-cover"
                 />
                 <h1 className="text-sm font-bold">{loggedInUser?.name}</h1>
@@ -69,7 +69,7 @@ const SideDrawer = () => {
             >
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                  isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                 }
                 to="/dashboard"
                 onClick={closeDrawer}
@@ -91,7 +91,7 @@ const SideDrawer = () => {
                 <NavLink
                   onClick={closeDrawer}
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/my-bookings"
                 >
@@ -113,7 +113,7 @@ const SideDrawer = () => {
                 <NavLink
                   onClick={closeDrawer}
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/facility-management"
                 >
@@ -134,7 +134,7 @@ const SideDrawer = () => {
                 <NavLink
                   onClick={closeDrawer}
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/all-bookings"
                 >
@@ -155,7 +155,7 @@ const SideDrawer = () => {
                 <NavLink
                   onClick={closeDrawer}
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/add-new-admin"
                 >
@@ -173,7 +173,7 @@ const SideDrawer = () => {
               )}
 
               {/* Common route */}
-              <button className="bg-transparent hover:bg-blue-100 rounded-lg">
+              <button className="bg-transparent hover:bg-[#E8B86D] rounded-lg">
                 <Link to={"/"} className="flex p-3 font-bold">
                   <ListItemPrefix
                     placeholder={undefined}
@@ -188,7 +188,7 @@ const SideDrawer = () => {
 
               <button
                 onClick={handleLogOut}
-                className="bg-transparent hover:bg-blue-100 rounded-lg"
+                className="bg-transparent hover:bg-[#E8B86D] rounded-lg"
               >
                 <div className="flex p-3 font-bold">
                   <ListItemPrefix

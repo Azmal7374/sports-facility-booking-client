@@ -44,16 +44,6 @@ const Booking = () => {
 
     const res = await createNewBooking(payload);
 
-    // if (res.error) {
-    //   toast.error(res.error.data.message);
-    // } else {
-    //   console.log(res.data.data.initializePayment);
-
-    //   if (res.data.data.initializePayment.result === "true") {
-    //     window.location.href = res.data.data.initializePayment.payment_url;
-    //   }
-    // }
-
     if (res.error) {
       const errorData = res.error as FetchBaseQueryError;
 
@@ -77,7 +67,7 @@ const Booking = () => {
 
   return (
     <div className="bg-[#] py-20">
-      <div className="bg-white rounded-lg overflow-hidden shadow-2xl w-[60%] mx-auto">
+      <div className="bg-[#E8B86D] rounded-lg overflow-hidden shadow-2xl w-[60%] mx-auto">
         <div className="p-1 bg-button"></div>
         <div className="p-8">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -85,7 +75,7 @@ const Booking = () => {
           </h2>
 
           <p className="text-2xl font-bold text-gray-800 mb-6">
-            ৳ {facility?.data?.pricePerHour} per hour
+            tk {facility?.data?.pricePerHour} per hour
           </p>
 
           <div className="mt-10">
@@ -103,7 +93,7 @@ const Booking = () => {
               <button
                 onClick={handleCheckAvailability}
                 disabled={!selectedDate || isCheckAvailabilityLoading}
-                className="w-full px-3 py-1 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark"
+                className="w-full px-3 py-1 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg- rounded-lg hover:bg-button-dark"
               >
                 {isCheckAvailabilityLoading ? (
                   <div className="flex gap-3 justify-center items-center text-2xl">

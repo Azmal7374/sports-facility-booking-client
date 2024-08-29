@@ -1,12 +1,13 @@
+import { NavLink } from "react-router-dom";
 import { selectCurrentUser } from "../../Redux/features/authSlice";
 import { useAppSelector } from "../../Redux/hooks";
 
 const DashboardDetails = () => {
   const user = useAppSelector(selectCurrentUser);
-
+  console.log(user)
   return (
     <div>
-      <div className="bg-[#F1F3C2] font-[sans-serif] relative max-w-4xl shadow-lg shadow-[#e9d9f3] mx-auto rounded overflow-hidden">
+      <div className="bg-gradient-to-r from-[#F1F3C2] to-[#E3F0D3] font-[sans-serif] relative max-w-4xl shadow-lg shadow-[#e9d9f3] mx-auto rounded overflow-hidden">
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
             <h3 className="font-extrabold text-3xl text-secondary leading-tight">
@@ -15,6 +16,24 @@ const DashboardDetails = () => {
             <h6 className="text-lg text-gray-800 mt-4">
               Manage your bookings and activities from here.
             </h6>
+
+            {/* User Statistics Section */}
+            <div className="mt-8">
+              <h4 className="text-2xl font-semibold text-gray-700">
+                Your Stats
+              </h4>
+              <ul className="mt-4 space-y-2">
+                <li className="text-sm text-gray-600">
+                  Total Bookings: <span className="font-bold">15</span>
+                </li>
+                <li className="text-sm text-gray-600">
+                  Upcoming Bookings: <span className="font-bold">3</span>
+                </li>
+                <li className="text-sm text-gray-600">
+                  Total Amount Spent: <span className="font-bold">$200</span>
+                </li>
+              </ul>
+            </div>
 
             <h1 className="mt-10 text-lg font-semibold text-gray-700">
               Need any help?
@@ -36,9 +55,9 @@ const DashboardDetails = () => {
                 </svg>
                 <a
                   href="javascript:void(0)"
-                  className="text-blue-700 text-sm ml-2"
+                  className="text-gray-700 text-sm ml-2"
                 >
-                  180-548-2588
+                  +0081799590273
                 </a>
               </li>
               <li className="flex items-center">
@@ -56,23 +75,50 @@ const DashboardDetails = () => {
                 </svg>
                 <a
                   href="javascript:void(0)"
-                  className="text-blue-700 text-sm ml-2"
+                  className="text-gray-700 text-sm ml-2"
                 >
-                  info@sportease.com
+                  amar@sportspace.com
                 </a>
               </li>
             </ul>
           </div>
 
-          <div className="flex justify-end items-center p-2 bg-primary rounded-bl-[230px] w-full h-full">
-            <div className="h-72 w-72 rounded-full bg-button p-5">
+          {/* Image Section */}
+          <div className="flex justify-end items-center p-2 rounded-bl-[230px] w-full h-full">
+            <div className="h-72 w-72 border-[#E8B86D]  rounded-full  ">
               <img
-                src="https://media.istockphoto.com/id/1188462138/photo/variety-of-sport-accessories-on-wooden-surface.jpg?s=612x612&w=0&k=20&c=y2l7DYNkxbVteZy-Kx_adCzm-soTRbiEypje4j8ENe0="
+                src="https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid"
                 className="w-full h-full rounded-full object-cover border-8 border-white"
                 alt="img"
               />
             </div>
           </div>
+        </div>
+
+        {/* Quick Links Section */}
+        <div className="mt-8 flex justify-around py-6 bg-gray-100 rounded-b-lg">
+
+        {user?.role === "admin" && (
+                <NavLink to="/facility-management"
+                >
+                   <button className="bg-blue-500  text-white py-2 px-4 rounded shadow-md hover:bg-blue-600 font-bold">
+            Book a Facility
+          </button>
+                </NavLink>
+              )}
+        
+        {user?.role === "user" && (
+                <NavLink to="//all-bookings"
+                >
+                   <button className="bg-[#E8B86D] text-white py-2 px-4 rounded shadow-md font-bold hover:bg-[#ce891a]">  All Bookings</button>
+                </NavLink>
+              )}
+          {user?.role === "admin" && (
+                <NavLink to="//all-bookings"
+                >
+                   <button className="bg-[#E8B86D] text-white py-2 px-4 rounded shadow-md font-bold hover:bg-[#ce891a]">  All Bookings</button>
+                </NavLink>
+              )}
         </div>
       </div>
     </div>

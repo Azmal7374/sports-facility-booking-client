@@ -26,7 +26,7 @@ const authApi = baseApi.injectEndpoints({
 
     createBooking: builder.mutation({
       query: (payload) => ({
-        url: `/bookings`,
+        url: `/booking`,
         method: "POST",
         body: payload,
       }),

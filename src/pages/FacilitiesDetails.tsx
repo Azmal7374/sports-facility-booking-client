@@ -39,8 +39,8 @@ const FacilitiesDetails = () => {
 
               <div className="mb-6 flex items-center gap-3 md:mb-5">
                 <div>
-                  <p className="text-lg bg-button text-white px-4 py-1 rounded-full">
-                    Price Per Hour: ৳ {facility?.data?.pricePerHour}
+                  <p className="text-lg bg-button text-gray-700  py-1 rounded-full ">
+                    Price per hour: tk {facility?.data?.pricePerHour}
                   </p>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const FacilitiesDetails = () => {
               <div className="flex gap-2.5">
                 <Link
                   to={`/book-facility/${id}`}
-                  className="inline-block flex-1 rounded-lg bg-button px-8 py-3 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-button-dark sm:flex-none md:text-base"
+                  className="inline-block flex-1 rounded-lg bg-[#E8B86D] px-8 py-3 text-center text-sm font-semibold dark:text-balck outline-none transition duration-100 hover:bg-button-dark sm:flex-none md:text-base"
                 >
                   Book Now
                 </Link>

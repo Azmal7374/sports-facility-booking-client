@@ -33,8 +33,8 @@ const Sidebar = () => {
           <div className="w-full max-w-[20rem] bg-[#CEDF9F] rounded-xl p-4 shadow-xl shadow-blue-gray-900/5">
             <div className="mb-2 p-4 flex items-center gap-3">
               <img
-                src={"https://i.ibb.co/HN9NtYY/user.png"}
-                className="w-[60px] h-[60px] border-2 border-blue-500 rounded-full object-cover"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1IR2XGBC_2lvTehp_LhYQ9Wj9NKkwORPfw&s"
+                className="w-[60px] h-[60px] border-2 border-[#E8B86D] rounded-full object-cover"
               />
               <h1 className="text-lg font-bold">{loggedInUser?.name}</h1>
             </div>
@@ -45,7 +45,7 @@ const Sidebar = () => {
             >
               <NavLink
                 className={({ isActive }) =>
-                  isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                  isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                 }
                 to="/dashboard"
               >
@@ -65,7 +65,7 @@ const Sidebar = () => {
               {user?.role === "user" && (
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/my-bookings"
                 >
@@ -86,7 +86,7 @@ const Sidebar = () => {
               {user?.role === "admin" && (
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/facility-management"
                 >
@@ -106,7 +106,7 @@ const Sidebar = () => {
               {user?.role === "admin" && (
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/all-bookings"
                 >
@@ -126,7 +126,7 @@ const Sidebar = () => {
               {user?.role === "admin" && (
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "active" : "text-lg rounded-lg hover:bg-blue-100"
+                    isActive ? "active" : "text-lg rounded-lg hover:bg-[#E8B86D]"
                   }
                   to="/add-new-admin"
                 >
@@ -144,7 +144,7 @@ const Sidebar = () => {
               )}
 
               {/* Common route */}
-              <button className="bg-transparent hover:bg-blue-100 rounded-lg">
+              <button className="bg-transparent hover:bg-[#E8B86D] rounded-lg">
                 <Link to={"/"} className="flex p-3 font-bold">
                   <ListItemPrefix
                     placeholder={undefined}
@@ -159,7 +159,7 @@ const Sidebar = () => {
 
               <button
                 onClick={handleLogOut}
-                className="bg-transparent hover:bg-blue-100 rounded-lg"
+                className="bg-transparent hover:bg-[#E8B86D] rounded-lg"
               >
                 <div className="flex p-3 font-bold">
                   <ListItemPrefix

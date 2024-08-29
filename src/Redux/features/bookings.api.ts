@@ -4,7 +4,7 @@ const authApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getBookingsByUser: builder.query({
       query: () => ({
-        url: "/bookings/user",
+        url: "/booking/user",
         method: "GET",
       }),
       providesTags: ["bookingsByUser"],
@@ -12,7 +12,7 @@ const authApi = baseApi.injectEndpoints({
 
     cancelBooking: builder.mutation({
       query: (id) => ({
-        url: `/bookings/${id}`,
+        url: `/booking/${id}`,
         method: "DELETE",
       }),
       invalidatesTags: ["bookingsByUser"],
@@ -20,7 +20,7 @@ const authApi = baseApi.injectEndpoints({
 
     getAllBookings: builder.query({
       query: () => ({
-        url: "/bookings",
+        url: "/booking",
         method: "GET",
       }),
       providesTags: ["getAllBookings"],

@@ -159,7 +159,7 @@ import Loading from "../Loading/Loading";
           {currentData?.map((item: any, index: number) => (
             <div
               key={index}
-              className="rounded-xl p-3 shadow-2xl hover:shadow-xl border-2 border-green-700"
+              className="rounded-xl p-3 shadow-2xl hover:shadow-xl border-2 border-[#E8B86D]"
             >
               <div className="relative flex items-end overflow-hidden rounded-xl">
                 <img
