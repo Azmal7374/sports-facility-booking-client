@@ -63,10 +63,10 @@ const ProfileMenu = () => {
           >
             <Avatar
               variant="circular"
-              size="sm"
+              size="md"
               alt="tania andrew"
-              className="border border-gray-900 p-0.5"
-              src={"https://i.ibb.co/HN9NtYY/user.png"}
+              className="border border-[#E8B86D]  p-0.5"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1IR2XGBC_2lvTehp_LhYQ9Wj9NKkwORPfw&s"
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}

@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { selectCurrentUser } from "../../Redux/features/authSlice";
 import { useAppSelector } from "../../Redux/hooks";
+import AnimationBanner from "../../assets/14529-soccer-player.json";
+import Lottie from "lottie-react";
 
 const DashboardDetails = () => {
   const user = useAppSelector(selectCurrentUser);
   console.log(user)
   return (
     <div>
-      <div className="bg-gradient-to-r from-[#F1F3C2] to-[#E3F0D3] font-[sans-serif] relative max-w-4xl shadow-lg shadow-[#e9d9f3] mx-auto rounded overflow-hidden">
+      <div className=" from-[#F1F3C2] to-[#E3F0D3] font-[sans-serif] relative  shadow-lg shadow-[#e9d9f3] mx-auto rounded overflow-hidden">
         <div className="grid sm:grid-cols-2 max-sm:gap-6">
           <div className="text-center p-6 flex flex-col justify-center items-center">
             <h3 className="font-extrabold text-3xl text-secondary leading-tight">
@@ -85,13 +87,9 @@ const DashboardDetails = () => {
 
           {/* Image Section */}
           <div className="flex justify-end items-center p-2 rounded-bl-[230px] w-full h-full">
-            <div className="h-72 w-72 border-[#E8B86D]  rounded-full  ">
-              <img
-                src="https://img.freepik.com/free-photo/sports-tools_53876-138077.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid"
-                className="w-full h-full rounded-full object-cover border-8 border-white"
-                alt="img"
-              />
-            </div>
+          <div className="mx-auto lg:px-6  animate-pulse">
+            <Lottie animationData={AnimationBanner} loop={true} />
+          </div>
           </div>
         </div>
 
@@ -108,9 +106,9 @@ const DashboardDetails = () => {
               )}
         
         {user?.role === "user" && (
-                <NavLink to="//all-bookings"
+                <NavLink to="/my-bookings"
                 >
-                   <button className="bg-[#E8B86D] text-white py-2 px-4 rounded shadow-md font-bold hover:bg-[#ce891a]">  All Bookings</button>
+                   <button className="bg-[#E8B86D] text-white py-2 px-4 rounded shadow-md font-bold hover:bg-[#ce891a]">My  Bookings</button>
                 </NavLink>
               )}
           {user?.role === "admin" && (
@@ -119,8 +117,164 @@ const DashboardDetails = () => {
                    <button className="bg-[#E8B86D] text-white py-2 px-4 rounded shadow-md font-bold hover:bg-[#ce891a]">  All Bookings</button>
                 </NavLink>
               )}
+{user?.role === "user" && (
+                <NavLink to="/"
+                >
+                   <button className="bg-blue-500  text-white py-2 px-4 rounded shadow-md hover:bg-blue-600 font-bold">
+        Home Page
+          </button>
+                </NavLink>
+              )}
+              
         </div>
       </div>
+
+
+      <div className="bg-white shadow-md rounded-lg p-6 mt-10 border border-[#E8B86D]">
+  <h2 className="text-2xl font-bold text-gray-800 mb-4">Upcoming Bookings</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+    {/* Booking Card 1 */}
+    <div className="border border-[#E8B86D] rounded-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-700">Football Practice</h3>
+      <p className="text-sm text-gray-500">Date: September 10, 2024</p>
+      <p className="text-sm text-gray-500">Time: 10:00 AM - 12:00 PM</p>
+      <button className="mt-4 text-sm text-black hover:underline">
+        View Details
+      </button>
+    </div>
+    {/* Booking Card 2 */}
+    <div className="border border-[#E8B86D] rounded-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-700">Yoga Session</h3>
+      <p className="text-sm text-gray-500">Date: September 12, 2024</p>
+      <p className="text-sm text-gray-500">Time: 8:00 AM - 9:30 AM</p>
+      <button className="mt-4 text-sm text-black hover:underline">
+        View Details
+      </button>
+    </div>
+    {/* Booking Card 3 */}
+    <div className="border border-[#E8B86D] rounded-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-700">Tennis Match</h3>
+      <p className="text-sm text-gray-500">Date: September 15, 2024</p>
+      <p className="text-sm text-gray-500">Time: 2:00 PM - 4:00 PM</p>
+      <button className="mt-4 text-sm text-black hover:underline">
+        View Details
+      </button>
+    </div>
+    {/* Booking Card 3 */}
+    <div className="border border-[#E8B86D] rounded-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-700">Cricket Practice</h3>
+      <p className="text-sm text-gray-500">Date: September 17, 2024</p>
+      <p className="text-sm text-gray-500">Time: 10:00 PM - 1:00 PM</p>
+      <button className="mt-4 text-sm text-black hover:underline">
+        View Details
+      </button>
+    </div>
+    {/* Booking Card 3 */}
+    <div className="border  border-[#E8B86D] rounded-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-700">Hocky Match</h3>
+      <p className="text-sm text-gray-500">Date: September 20, 2024</p>
+      <p className="text-sm text-gray-500">Time: 3:00 PM - 5:00 PM</p>
+      <button className="mt-4 text-sm text-black hover:underline">
+        View Details
+      </button>
+    </div>
+    {/* Booking Card 3 */}
+    <div className="border border-[#E8B86D] rounded-lg p-4">
+      <h3 className="text-lg font-semibold text-gray-700">Shuttle Match</h3>
+      <p className="text-sm text-gray-500">Date: September 18, 2024</p>
+      <p className="text-sm text-gray-500">Time: 10:00 PM - 1:00 PM</p>
+      <button className="mt-4 text-sm text-black hover:underline">
+        View Details
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<div className="bg-[#e8f5e9] p-6 mt-8 rounded shadow-lg">
+  <h3 className="text-xl font-bold text-gray-800">
+    Facility Guidelines & Rules
+  </h3>
+  <p className="mt-4 text-gray-700">
+    Please review the following guidelines to ensure a safe and enjoyable
+    experience for all users:
+  </p>
+  <ul className="mt-4 list-disc list-inside space-y-2 text-gray-600">
+    <li>Arrive 10 minutes before your booking time to check in.</li>
+    <li>
+      Proper sports attire, including non-marking shoes, is required at all
+      times.
+    </li>
+    <li>
+      No food or drinks (except water) are allowed inside the facilities.
+    </li>
+    <li>Respect other users by keeping noise levels to a minimum.</li>
+    <li>
+      Report any equipment issues or facility damages to the management
+      immediately.
+    </li>
+    <li>
+      Failure to follow these rules may result in booking cancellation or
+      facility access restrictions.
+    </li>
+  </ul>
+  <p className="mt-4 text-gray-700 font-medium">
+    Thank you for your cooperation!
+  </p>
+</div>
+
+
+<footer className="bg-[#A1D6B2] text-gray-700 p-6 mt-12">
+  <div className="max-w-4xl mx-auto grid sm:grid-cols-3 gap-8">
+    <div>
+      <h3 className="text-xl font-bold">SportSpace Dashboard</h3>
+      <p className="mt-2 text-sm">
+        Manage your bookings and stay on top of your game with our user-friendly
+        dashboard. Your one-stop solution for all your sports facility needs.
+      </p>
+    </div>
+    <div>
+      <h4 className="text-lg font-semibold">Quick Links</h4>
+      <ul className="mt-4 space-y-2 text-sm">
+        <li>
+          <a href="/bookings" className="hover:underline">
+            My Bookings
+          </a>
+        </li>
+        <li>
+          <a href="/facilities" className="hover:underline">
+            Browse Facilities
+          </a>
+        </li>
+        <li>
+          <a href="/help" className="hover:underline">
+            Help & Support
+          </a>
+        </li>
+        <li>
+          <a href="/contact" className="hover:underline">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h4 className="text-lg font-semibold">Contact Information</h4>
+      <p className="mt-4 text-sm">
+        <strong>Email:</strong> support@sportspace.com
+        <br />
+        <strong>Phone:</strong> 180-123-4567
+        <br />
+        <strong>Address:</strong> 1234 Sports Lane, Springfield
+      </p>
+    </div>
+  </div>
+  <div className="mt-8 text-center text-xs md:text-lg text-gray-800">
+    &copy; {new Date().getFullYear()} SportSpace. All rights reserved.
+  </div>
+</footer>
+
+
     </div>
   );
 };

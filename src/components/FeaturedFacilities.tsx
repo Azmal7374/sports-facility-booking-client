@@ -1,8 +1,8 @@
 
 const FeaturedFacilities = () => {
     return (
-      <div className="mt-9 pb-20">
-        <div className="mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-5">
+      <div className="mt-20 pb-20">
+        <div className="mb-2 flex items-center justify-center gap-8 ">
           <div className="flex items-center justify-center gap-12">
             <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl dark:text-white">
               Featured <span className="text-secondary">Facilities</span>
@@ -10,7 +10,7 @@ const FeaturedFacilities = () => {
           </div>
         </div>
   
-        <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3">
           <div className="rounded-xl  p-3 shadow-lg hover:shadow-xl">
             <div className="relative flex items-end overflow-hidden rounded-xl">
               <img

@@ -1,9 +1,9 @@
 import FeaturedFacilities from "../components/FeaturedFacilities";
 import Gallery from "../components/Gallery";
-import Hero from "../components/Hero";
 import HowItWorks from "../components/HowItWorks";
 import Testimonials from "../components/Testimonials";
 import Banner from "./Banner";
+import Hero from "./Hero";
 import KeySponsor from "./KeySponsor";
 import { motion } from "framer-motion";
 // bg-[#A1D6B2]
@@ -16,7 +16,7 @@ const Home = () => {
       exit={{ opacity: 0, transition: { duration: 1.5 } }}
     ></motion.div>
        <Banner/>
-      {/* <Hero /> */}
+      <Hero/>
       <FeaturedFacilities />
       <HowItWorks />
       <Testimonials />

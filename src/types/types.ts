@@ -6,11 +6,13 @@ export interface CustomJwtPayload {
     facility: {
       name: string;
       pricePerHour: number;
-      image?: string; // Include optional image property if needed
+      image?: string;
+      description: string;
     };
     date: string;
     startTime: string;
     endTime: string;
+   
   }
   
   export interface Facility {

@@ -138,8 +138,8 @@ import Loading from "../Loading/Loading";
   
     return (
       <div>
-        <div className="bg-[#4158A6] w-full py-2 bg-secondary rounded-lg ">
-          <h1 className="text-white text-xl text-center">All Facilites</h1>
+        <div className="bg-[#F1F3C2] w-full py-2 bg-secondary rounded-lg ">
+          <h1 className="text-black text-xl text-center">All Facilites</h1>
         </div>
   
         <div className="flex justify-center items-center my-5">
@@ -180,14 +180,14 @@ import Loading from "../Loading/Loading";
               </div>
   
               <div onClick={() => handleOpen(item)}>
-                <button className="w-full rounded-lg bg-[#E8B86D] p-2 px-3 text-center text-sm font-semibold text-white outline-none transition duration-100 hover:bg-button-dark sm:flex-none md:text-base">
+                <button className="w-full rounded-lg bg-[#E8B86D] p-2 px-3 text-center text-sm font-semibold text-black outline-none transition duration-100 hover:bg-button-dark sm:flex-none md:text-base">
                   Edit
                 </button>
               </div>
   
               <button
                 onClick={() => handleDeleteFacility(item._id)}
-                className="w-full mt-3 rounded-lg bg-red-700 p-2 px-3 text-center text-sm font-semibold text-white outline-none transition duration-100 sm:flex-none md:text-base"
+                className="w-full mt-3 rounded-lg bg-[#F1F3C2] p-2 px-3 text-center text-sm font-semibold text-black outline-none transition duration-100 sm:flex-none md:text-base"
               >
                 Delete
               </button>

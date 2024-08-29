@@ -42,13 +42,13 @@ const SideDrawer = () => {
         <Drawer
           open={open}
           onClose={closeDrawer}
-          className="p-4"
+          className="p-4 bg-[#F1F3C2]"
           placeholder={undefined}
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >
           <Card
-            className="w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5"
+            className="w-full max-w-[20rem] p-4 shadow-xl shadow-[#CEDF9F]"
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
@@ -182,13 +182,13 @@ const SideDrawer = () => {
                   >
                     <IoMdArrowRoundBack fontSize={"20"} />
                   </ListItemPrefix>
-                  Back to main site
+                 Home
                 </Link>
               </button>
 
               <button
                 onClick={handleLogOut}
-                className="bg-transparent hover:bg-[#E8B86D] rounded-lg"
+                className="bg-transparent hover:bg-blue-100 rounded-lg"
               >
                 <div className="flex p-3 font-bold">
                   <ListItemPrefix
