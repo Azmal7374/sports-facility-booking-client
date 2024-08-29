@@ -4,20 +4,20 @@ import Loading from "./Loading/Loading";
 
 const FacilitiesDetails = () => {
   const { id } = useParams();
-
+  
   const { data: facility, isLoading } = useGetFacilityDetailsQuery(id);
-
+  console.log(facility)
   if (isLoading) {
     return <Loading />;
   }
 
   return (
     <div>
-      <div className="bg-[#A1D6B2] py-6 sm:py-8 lg:py-12">
+      <div className="py-6 sm:py-8 lg:py-12">
         <div className="mx-auto max-w-screen-xl px-4 md:px-8">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="grid gap-4 lg:grid-cols-5">
-              <div className="relative overflow-hidden rounded-lg bg-gray-100 lg:col-span-4">
+              <div className="relative overflow-hidden rounded-lg bg-gray-300 lg:col-span-4">
                 <img
                   src={facility?.data?.image}
                   loading="lazy"
