@@ -18,13 +18,13 @@
 1. **Clone the repository**
 
    ```sh
-   https://github.com/yasin-arafat-389/SportEase-Client
+   https://github.com/Azmal7374/sports-facility-booking-client
    ```
 
    2. **Navigate to the project directory**
 
    ```sh
-   cd SportEase-Client
+   cd sports-facility-booking-client
 
    ```
 
