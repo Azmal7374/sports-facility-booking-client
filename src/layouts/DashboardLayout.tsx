@@ -1,10 +1,13 @@
 import { Outlet } from "react-router-dom";
 import SideDrawer from "../components/SidebarDrawer";
 import Sidebar from "../components/Sidebar";
+import ScrollToTop from "../utlis/ScrollToTop";
+import ScrollToTopButton from "../utlis/ScrollToTopButton";
 
 const DashboardLayout = () => {
 return (
     <div className="py-4">
+       <ScrollToTop/>
       <div className=" w-[90%] mx-auto  ">
         {/* Top Banner */}
         <div
@@ -23,6 +26,7 @@ return (
           <div className="w-full h-full">
             <Outlet />
           </div>
+          <ScrollToTopButton />
         </div>
       </div>
     </div>

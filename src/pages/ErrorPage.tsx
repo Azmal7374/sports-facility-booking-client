@@ -10,15 +10,12 @@ const ErrorPage = () => {
             <div className="absolute">
               <div className="">
                 <h1 className="my-2 text-gray-800 font-bold text-2xl">
-                  Looks like you have found the doorway to the great nothing
+                It seems you've stumbled upon the entrance to the vast emptiness.
                 </h1>
-                <p className="my-2 text-gray-800">
-                  Sorry about that! Please visit our hompage to get where you
-                  need to go.
-                </p>
+              
                 <Link to="/">
-                  <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50">
-                    Take me there!
+                  <button className="sm:w-full lg:w-auto my-2 border rounded md py-4 px-8 text-center bg-[#E8B86D] text-white hover:bg-[#CEDF9F] focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50 font-bold">
+                    Back To Home Page!
                   </button>
                 </Link>
               </div>
@@ -29,7 +26,7 @@ const ErrorPage = () => {
           </div>
         </div>
         <div>
-          <img src="https://i.ibb.co/ck1SGFJ/Group.png" />
+          <img src="https://img.freepik.com/premium-photo/basketball-player-man-isolated-white-wall-doing-surprise-gesture-while-looking-side_1368-195693.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid" />
         </div>
       </div>
     </div>

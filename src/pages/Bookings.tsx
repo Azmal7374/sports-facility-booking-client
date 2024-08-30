@@ -67,14 +67,14 @@ const Booking = () => {
 
   return (
     <div className="bg-[#] py-20">
-      <div className="bg-[#E8B86D] rounded-lg overflow-hidden shadow-2xl w-[60%] mx-auto">
+      <div className="bg-[#CEDF9F] rounded-lg overflow-hidden shadow-2xl w-[60%] mx-auto">
         <div className="p-1 bg-button"></div>
         <div className="p-8">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+          <h2 className=" text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center">
             {facility?.data?.name}
-          </h2>
+          </h2 >
 
-          <p className="text-2xl font-bold text-gray-800 mb-6">
+          <p className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
             tk {facility?.data?.pricePerHour} per hour
           </p>
 
@@ -82,10 +82,10 @@ const Booking = () => {
             <p className="mb-2 font-bold text-lg text-gray-700">
               Select a date:
             </p>
-            <div className="flex">
+            <div className="md:flex justify-center items-center px-2 ">
               <input
                 type="date"
-                className="w-[200px] border-button border-2 outline-none p-3 rounded-3xl font-bold"
+                className="w-[200px] border-button border-2 border-[#E8B86D] outline-none p-3 rounded-3xl font-bold"
                 value={selectedDate}
                 onChange={(e) => setSelectedDate(e.target.value)}
               />
@@ -93,7 +93,7 @@ const Booking = () => {
               <button
                 onClick={handleCheckAvailability}
                 disabled={!selectedDate || isCheckAvailabilityLoading}
-                className="w-full px-3 py-1 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg- rounded-lg hover:bg-button-dark"
+                className=" mt-4 md:mt-0 w-full py-2 md:px-3  md:py-4 tracking-wider bg-[#E8B86D] text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg- rounded-lg hover:bg-button-dark"
               >
                 {isCheckAvailabilityLoading ? (
                   <div className="flex gap-3 justify-center items-center text-2xl">
@@ -119,7 +119,7 @@ const Booking = () => {
                     {availableSlots?.map((item: any, index: number) => (
                       <div
                         key={index}
-                        className="bg-button py-2 text-center text-lg font-semibold text-white rounded-lg"
+                        className="bg-button py-2 text-center text-lg font-semibold text-black rounded-lg"
                       >
                         {convertTo12HourFormat(item.startTime)} -{" "}
                         {convertTo12HourFormat(item.endTime)}
@@ -127,7 +127,8 @@ const Booking = () => {
                     ))}
                   </div>
 
-                  <div className="mt-10 flex gap-10">
+                  <div className="mt-10 md:flex gap-10
+                   justify-around">
                     <div>
                       <p className="mb-2 font-bold text-lg text-gray-700">
                         Select start time of your slot:
@@ -135,30 +136,31 @@ const Booking = () => {
 
                       <input
                         type="time"
-                        className="w-[200px] border-button border-2 outline-none p-3 rounded-3xl font-bold"
+                        className="w-[200px] border-button border-2 outline-none p-3 rounded-3xl font-bold border-[#E8B86D]"
                         value={startTime}
                         onChange={(e) => setStartTime(e.target.value)}
                       />
                     </div>
 
                     <div>
-                      <p className="mb-2 font-bold text-lg text-gray-700">
+                      <p className="mb-2 font-bold text-lg text-gray-700 mt-4 md:mt-0">
                         Select end time of your slot:
                       </p>
 
                       <input
                         type="time"
-                        className="w-[200px] border-button border-2 outline-none p-3 rounded-3xl font-bold"
+                        className="w-[200px] border-button border-2 outline-none p-3 rounded-3xl font-bold border-[#E8B86D]"
                         value={endTime}
                         onChange={(e) => setEndTime(e.target.value)}
                       />
                     </div>
                   </div>
 
-                  <button
+                 <div className="flex justify-center mt-4 md:mt-8">
+                 <button
                     type="submit"
                     disabled={isCreateBookingLoading}
-                    className="mt-5 w-full px-3 py-2 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto md:mx-4 focus:outline-none bg-button rounded-lg hover:bg-button-dark"
+                    className="mt-5 w-full px-3 py-2 tracking-wider text-black font-bold transition-colors duration-300 transform md:w-auto focus:outline-none bg-[#E8B86D]  rounded-lg hover:bg-button-dark "
                   >
                     {isCreateBookingLoading ? (
                       <div className="flex gap-3 justify-center items-center text-2xl">
@@ -171,6 +173,7 @@ const Booking = () => {
                       "Proceed To Payment"
                     )}
                   </button>
+                 </div>
                 </div>
               )}
             </form>

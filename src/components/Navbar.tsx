@@ -19,8 +19,8 @@ const Navbar = () => {
   return (
     <div className="bg-[#F1F3C2] flex justify-between items-center bg-primary py-3 px-10 md:px-10 lg:px-20 shadow-xl sticky top-0 z-20">
     <div className="flex items-center gap-1">
-    <img src={logo} className="w-[40px] md:w-[50px] lg:w-[60px]" />
-    <h1 className="text-2xl lg:text-3xl">SportSpace</h1>
+    <img src={logo} className="w-[40px] md:w-[40px] lg:w-[60px]" />
+    <h1 className="text-2xl lg:text-4xl">SportSpace</h1>
     </div>
 
       <div className="hidden md:hidden lg:flex gap-7 justify-center items-center text-lg font-bold">
@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
         ) : (
           <Link to={"/login"}>
-            <button className="cursor-pointer transition-all bg-button  px-4 py-1 rounded-lg  border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
+            <button className="cursor-pointer transition-all bg-[#E8B86D]  px-4 py-1 rounded-lg  border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]">
               Login
             </button>
           </Link>
@@ -61,21 +61,22 @@ const Navbar = () => {
           <img src="" className="w-[150px] mb-7" />
 
           <div className="flex flex-col gap-4 text-center">
-            <NavLink onClick={closeDrawer} to={"/"}>
-              Home
-            </NavLink>
-
-            <NavLink onClick={closeDrawer} to={"/products"}>
-              Products
-            </NavLink>
-
-            <NavLink onClick={closeDrawer} to={"/management"}>
-              Management
-            </NavLink>
-
-            <NavLink onClick={closeDrawer} to={"/cart"}>
-              <HiOutlineShoppingBag size={"30"} />
-            </NavLink>
+          
+            <NavLink onClick={closeDrawer}  to={"/"}>Home</NavLink>
+        <NavLink className="hover:bg-[#E8B86D] px-4 py-2 rounded-lg hover:font-bold"  onClick={closeDrawer}  to={"/about-us"}>About Us</NavLink>
+        <NavLink className="hover:bg-[#E8B86D] px-4 py-2 rounded-lg hover:font-bold" onClick={closeDrawer}  to={"/contact-us"}>Contact Us</NavLink>
+           
+            {user ? (
+          <div>
+            <ProfileMenu />
+          </div>
+        ) : (
+          <Link to={"/login"}>
+            <button className="cursor-pointer transition-all bg-[#E8B86D]  rounded-lg  border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] font-bold px-4 py-1">
+              Login
+            </button>
+          </Link>
+        )}
           </div>
         </div>
       </Drawer>

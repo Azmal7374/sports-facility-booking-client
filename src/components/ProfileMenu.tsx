@@ -41,7 +41,7 @@ const ProfileMenu = () => {
     },
 
     {
-      label: "Sign Out",
+      label: "Log Out",
       icon: <AiOutlinePoweroff fontSize={"20px"} />,
       action: handleLogout,
     },
@@ -65,7 +65,7 @@ const ProfileMenu = () => {
               variant="circular"
               size="md"
               alt="tania andrew"
-              className="border border-[#E8B86D]  p-0.5"
+              className="border border-[#E8B86D]  ml-6 md:ml-1  p-0.5"
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx1IR2XGBC_2lvTehp_LhYQ9Wj9NKkwORPfw&s"
               placeholder={undefined}
               onPointerEnterCapture={undefined}
@@ -73,7 +73,7 @@ const ProfileMenu = () => {
             />
             <BsChevronDown
               strokeWidth={2.5}
-              className={`h-3 w-3 transition-transform ${
+              className={`h-3 w-3 text-black transition-transform ${
                 isMenuOpen ? "rotate-180" : ""
               }`}
             />

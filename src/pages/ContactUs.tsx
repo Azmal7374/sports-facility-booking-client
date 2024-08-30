@@ -33,32 +33,43 @@ const ContactUs = () => {
           }
         );
     };
+
+
+
   return (
     <div className="">
-      <form ref={form} onSubmit={sendEmail}>
-        <section className="text-gray-600 body-font relative">
-          <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-            <div className="w-full h-[400px] lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
-             <iframe
-                width="100%"
-                height="100%"
-                className="absolute inset-0"
-                title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1480.3350421915732!2d90.40060238874337!3d22.691750391064847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375533ac1ee93ac7%3A0x615e7e7fb6520d07!2z4Kaq4KeC4Kaw4KeN4KasIOCmmuCmsOCmleCmvuCmieCmr-CmvOCmviDgpqzgpr7gpofgpqTgp4Hgprgg4Ka44Ka-4Kay4Ka-4KauIOCmnOCmvuCmruCnhyDgpq7gprjgppzgpr_gpqbgpaQ!5e0!3m2!1sen!2sbd!4v1724671783501!5m2!1sen!2sbd"
-                ></iframe>
-           
-            
-            </div>
-            <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 px-7 mt-8 md:mt-0">
-              <h2 className="text-gray-900 text-2xl mb-1 font-bold title-font">
-                Contact us
-              </h2>
-              <p className="leading-relaxed mb-5 text-gray-600">
-                If you have any doubts, please contact us by submitting
-                following form
-              </p>
+       <section className=" py-12">
+      <div className="container mx-auto px-6">
+        <h2 className="text-gray-800 text-2xl md:text-4xl mb-1 font-bold title-font text-center">Contact Information</h2>
+        <p className="text-center text-lg mt-4 mb-8">
+          Reach out to us through the following channels.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="bg-[#CEDF9F] p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4">Phone</h3>
+            <p className="text-gray-600">+1 234 567 890</p>
+          </div>
+          <div className="bg-[#CEDF9F] p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4">Email</h3>
+            <p className="text-gray-600">contact@yourdomain.com</p>
+          </div>
+          <div className="bg-[#CEDF9F] p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4">Address</h3>
+            <p className="text-gray-600">1234 Street Name, City, State, Zip Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <div className="relative mb-4 form-group">
+    <section className="py-12">
+      <div className="container mx-auto px-6">
+        <h2 className="text-gray-800 text-2xl md:text-4xl mb-1 font-bold title-font text-center">Send Us a Message</h2>
+        <p className="text-center text-lg md:text-xl mt-4 mb-8 text-gray-700">
+          Have any questions? We’d love to hear from you.
+        </p>
+        <div className="max-w-xl mx-auto">
+          <form ref={form} onSubmit={sendEmail} className="bg-gray-50 p-8 rounded-lg shadow-lg">
+          <div className="relative mb-4 form-group">
                 <label
                   htmlFor="name"
                   className="leading-7 text-sm text-gray-600"
@@ -113,10 +124,46 @@ const ContactUs = () => {
                   className="bg-[#E8B86D] text-white p-2 rounded-full w-40"
                 ></input>
               </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section className="py-12 ">
+      <div className="container mx-auto px-6">
+        <h2 className="text-gray-800 text-2xl md:text-4xl mb-1 font-bold title-font text-center">Location & Hours</h2>
+        <p className="text-center text-lg mt-4 mb-8">
+          Find us here and check our operating hours.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4">Our Location</h3>
+            <div className="w-full h-64">
+              <iframe
+                className="w-full h-full rounded-lg"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1480.3350421915732!2d90.40060238874337!3d22.691750391064847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375533ac1ee93ac7%3A0x615e7e7fb6520d07!2z4Kaq4KeC4Kaw4KeN4KasIOCmmuCmsOCmleCmvuCmieCmr-CmvOCmviDgpqzgpr7gpofgpqTgp4Hgprgg4Ka44Ka-4Kay4Ka-4KauIOCmnOCmvuCmruCnhyDgpq7gprjgppzgpr_gpqbgpaQ!5e0!3m2!1sen!2sbd!4v1724671783501!5m2!1sen!2sbd"
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
-        </section>
-      </form>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4">Operating Hours</h3>
+            <ul className="text-gray-600">
+              <li className="mb-4">
+                <strong>Monday - Friday:</strong> 9:00 AM - 9:00 PM
+              </li>
+              <li className="mb-4">
+                <strong>Saturday:</strong> 10:00 AM - 6:00 PM
+              </li>
+              <li>
+                <strong>Sunday:</strong> Closed
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     </div>
   );
 };

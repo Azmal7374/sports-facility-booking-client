@@ -146,7 +146,7 @@ const FacilityAvailabilityCalendar = () => {
   return (
     <section className="">
       <div className="container  mt-10 mx-auto px-6">
-        <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl dark:text-white text-center">Check Facility Availability</h2>
+        <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl dark:text-white text-center mb-6">Check Facility Availability</h2>
         <div className="mt-4 bg-white rounded-lg shadow p-6 border border-[#CEDF9F]">
           {renderHeader()}
           {renderDays()}

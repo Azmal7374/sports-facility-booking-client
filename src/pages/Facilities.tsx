@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useGetAllFacilitiesQuery } from "../Redux/features/facilities.api";
 import Loading from "./Loading/Loading";
+import Carosuel from "./Carosuel";
 
 const Facilities = () => {
   const { data: facilities, isLoading } = useGetAllFacilitiesQuery(undefined);
@@ -71,22 +72,15 @@ const Facilities = () => {
 
   return (
     <div>
-      <div
-        className="h-[200px] bg-cover bg-center grayscale"
-        style={{
-          backgroundImage: `url("https://media.istockphoto.com/id/1188462138/photo/variety-of-sport-accessories-on-wooden-surface.jpg?s=612x612&w=0&k=20&c=y2l7DYNkxbVteZy-Kx_adCzm-soTRbiEypje4j8ENe0=")`,
-        }}
-      >
-        <div className="h-full w-full flex items-center justify-center bg-black bg-opacity-50">
-          <h1 className="text-white text-5xl">Facilities</h1>
-        </div>
+      <div>
+        <Carosuel/>
       </div>
 
-      <div className="bg-[#A1D6B2]">
+      <div className="">
         <div className="py-20">
           <div className="max-w-screen-xl mx-auto mb-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
             <select
-              className="px-5 outline-none rounded-lg text-lg font-bold text-gray-700"
+              className="px-5 outline-none rounded-lg text-lg font-bold text-gray-700 border border-[#E8B86D]"
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
             >
@@ -139,7 +133,7 @@ const Facilities = () => {
                   </span>
 
                   <Link
-                    className="mt-5  flex justify-center items-center gap-3 font-bold rounded-xl bg-button p-2 hover:bg-button-dark"
+                    className="mt-5  flex justify-center items-center gap-3 font-bold rounded-xl bg-button p-2 hover:bg-button-dark bg-[#E8B86D]"
                     to={`/facilities/${facility._id}`}
                   >
                     View Details
@@ -157,7 +151,7 @@ const Facilities = () => {
             <button
               disabled={currentPage === 1}
               onClick={() => handlePageChange(currentPage - 1)}
-              className="mx-2 px-4 py-2 bg-button text-white rounded disabled:opacity-50"
+              className="mx-2 px-4 py-2  border bg-[#E8B86D] text-white rounded disabled:opacity-50"
             >
               Previous
             </button>
@@ -167,8 +161,8 @@ const Facilities = () => {
                 onClick={() => handlePageChange(pageNumber + 1)}
                 className={`mx-2 px-4 py-2 rounded ${
                   currentPage === pageNumber + 1
-                    ? "bg-button text-white"
-                    : "bg-gray-300 text-gray-800"
+                    ? "bg-[#E8B86D] text-black"
+                    : "bg-[#CEDF9F] text-gray-800"
                 }`}
               >
                 {pageNumber + 1}
@@ -177,7 +171,7 @@ const Facilities = () => {
             <button
               disabled={currentPage === totalPages}
               onClick={() => handlePageChange(currentPage + 1)}
-              className="mx-2 px-4 py-2 bg-button text-white rounded disabled:opacity-50"
+              className="mx-2 px-4 py-2 bg-[#CEDF9F] text-white rounded disabled:opacity-50"
             >
               Next
             </button>

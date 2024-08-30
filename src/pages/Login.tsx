@@ -9,8 +9,8 @@ import Lottie from "lottie-react";
 import reader from '.././assets/38435-register.json'
 
 const Login = () => {
-  const [email, setEmail] = useState("web@programming-hero.com");
-  const [password, setPassword] = useState("programming-hero");
+  const [email, setEmail] = useState("azmalgazi4@gmail.com");
+  const [password, setPassword] = useState("azmal1234");
   const [login, { isLoading }] = useLoginMutation();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
@@ -44,13 +44,13 @@ const Login = () => {
   return (
     <div className="">
       <div className="py-16">
-        <div className="flex  rounded-lg overflow-hidden mx-auto max-w-sm lg:max-w-4xl">
-          <div className="hidden lg:block lg:w-1/2">
+        <div className="md:flex overflow-hidden mx-auto max-w-sm items-center lg:max-w-4xl">
+          <div className=" w-56 md:w-1/2 mx-auto">
           <Lottie animationData={reader} loop={true} />
           </div>
           <div className="w-full p-8 lg:w-1/2">
             <h2 className="text-2xl font-semibold text-gray-700 text-center">
-              SportsBooking
+              SportsSpace
             </h2>
             <p className="text-xl text-gray-600 text-center">
               Login Here
@@ -91,7 +91,7 @@ const Login = () => {
                 <button
                   disabled={isLoading}
                   type="submit"
-                  className="bg-button hover:bg-button-dark  font-bold py-2 px-4 w-full rounded"
+                  className="bg-button bg-[#E8B86D]  font-bold py-2 px-4 w-full rounded hover:bg-[#F1F3C2] "
                 >
                   {isLoading ? (
                     <div className="flex gap-3 justify-center items-center text-2xl">

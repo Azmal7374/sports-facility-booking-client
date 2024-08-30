@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <div className="">
-        <footer className="bg- font-sans bg-[#F1F3C2] dark:bg-gray-900">
+        <footer className="bg- font-sans bg-[#CEDF9F] dark:bg-gray-900">
           <div className="container px-6 pt-12 pb-5 mx-auto">
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
               <div className="sm:col-span-2">
@@ -116,7 +116,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="font-sans p-8 text-start md:text-center md:text-lg md:p-4">
-              © 2024 <span className="text-[#E8B86D] font-bold">SportsBooking</span> Inc. All rights reserved.
+              © 2024 <span className="text-[#E8B86D] font-bold">SportSpace</span> Inc. All rights reserved.
             </p>
           </div>
         </footer>
