@@ -2,7 +2,7 @@
 
 const NoDataFound = ({ message }: any) => {
   return (
-    <div>
+    <div className="bg-red-300">
       <div className="bg-gray-400 w-full py-7 rounded-lg flex flex-col justify-center items-center">
         <img className="w-[150px]" src="" alt="" />
 

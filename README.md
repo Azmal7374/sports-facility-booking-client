@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+## Technology Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- React
+- TypeScript
+- Redux Toolkit
+- React Router
+- Tailwind CSS
 
-Currently, two official plugins are available:
+## Installation Guideline
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (version 14 or above)
+- npm (version 6 or above) or yarn (version 1.22 or above)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation Steps
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+   ```sh
+   https://github.com/yasin-arafat-389/SportEase-Client
+   ```
+
+   2. **Navigate to the project directory**
+
+   ```sh
+   cd SportEase-Client
+
+   ```
+
+   3. **Install the dependencies**
+
+   ```sh
+   npm install
+   ```
+
+### Configuration
+
+1.  **Replace base URL according to your local machine**
+
+```sh
+const baseQuery = fetchBaseQuery({
+baseUrl: "http://localhost:5000/api",
+});
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage
+
+1.  **Start the development server**
+
+```sh
+npm run dev
+
+```

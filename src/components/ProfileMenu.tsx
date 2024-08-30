@@ -56,7 +56,7 @@ const ProfileMenu = () => {
           <Button
             variant="text"
             color="blue-gray"
-            className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto outline-none"
+            className="flex items-center gap-1 rounded-full py-0.5 pr-2 pl-0.5 lg:ml-auto outline-none "
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}
@@ -81,20 +81,21 @@ const ProfileMenu = () => {
         </MenuHandler>
 
         <MenuList
-          className="p-1 overflow-hidden"
+          className="p-1 overflow-hidden bg-[#E8B86D] "
           placeholder={undefined}
           onPointerEnterCapture={undefined}
           onPointerLeaveCapture={undefined}
         >
           {profileMenuItems.map((item, index) => (
             <MenuItem
+          
               key={index}
               onClick={item.action}
               placeholder={undefined}
               onPointerEnterCapture={undefined}
               onPointerLeaveCapture={undefined}
             >
-              <div className="flex items-center gap-4 text-[15px] font-bold">
+              <div className="flex items-center gap-4 text-[15px] font-bold ">
                 <span>{item.icon}</span>
                 {item.label}
               </div>

@@ -53,8 +53,8 @@ const MyBookings = () => {
   if (isLoading) {
     return <Loading />;
   }
-
-  if (bookings.data.length === 0) {
+  console.log(bookings)
+  if (bookings?.data?.length === 0) {
     return <NoDataFound message="No Bookings Found" />;
   }
 
@@ -67,6 +67,7 @@ const MyBookings = () => {
       <div className="mt-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {bookings?.data?.map((item: any, index: number) => (
           <div
+        
             key={index}
             className="rounded-xl p-3 shadow-2xl hover:shadow-xl border-2 border-[#E8B86D]"
           >

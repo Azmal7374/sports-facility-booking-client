@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Drawer } from "@material-tailwind/react";
 import { useState } from "react";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
 import ProfileMenu from "./ProfileMenu";
 import { useAppSelector } from "../Redux/hooks";
 import { selectCurrentUser } from "../Redux/features/authSlice";

@@ -162,19 +162,21 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="mx-20  mt-14">
+    <div className="mx-4 md:mx-20  mt-14">
       <h2 className="text-2xl text-center font-bold text-gray-800 lg:text-4xl dark:text-white mb-6">
         Explore our Image Gallery
       </h2>
-      <Tabs value="cricket">
+      <Tabs value="cricket" >
         <TabsHeader
           placeholder=""
+          className="bg-[#F1F3C2] "
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
         >
           {data.map(({ label, value }) => (
             <Tab key={value} value={value}
             placeholder="" 
+            className=""
         onPointerEnterCapture={() => {}} 
         onPointerLeaveCapture={() => {}}
             >
@@ -189,7 +191,7 @@ const Gallery = () => {
         className="grid grid-cols-1 gap-4 ">
           {data.map(({ value, images }) => (
             <TabPanel
-              className="grid grid-cols-2 gap-4 md:grid-cols-3"
+              className="grid grid-cols-2 gap-4 md:grid-cols-3  bg-[#E8B86D]"
               key={value}
               value={value}
             >

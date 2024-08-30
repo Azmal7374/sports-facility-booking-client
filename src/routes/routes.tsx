@@ -14,9 +14,9 @@ import ViewAllBookings from "../pages/Dashboard/ViewAllBookings";
 import ProtectedRoute from "./ProtectedRoute";
 import DashboardDetails from "../pages/Dashboard/DashboardDetails";
 import MyBookings from "../pages/Dashboard/MyBookings";
-import DashboardLayout from "../layouts/Dashboardlayout";
 import CreateNewAdmin from "../pages/Dashboard/CreateNewAdmin";
 import FacilityManage from "../pages/Dashboard/FacilityManage";
+import DashboardLayout from "../layouts/DashboardLayout";
 
 const router = createBrowserRouter([
   {

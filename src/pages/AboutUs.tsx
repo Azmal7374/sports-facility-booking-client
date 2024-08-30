@@ -65,18 +65,18 @@ const AboutUs = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-lg border border-[#CEDF9F]">
+            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-lg border-2 border-[#CEDF9F]">
               <img src={member.image} alt={member.name} className="mx-auto rounded-full mb-4" />
-              <h3 className="text-xl font-semibold">{member.name}</h3>
-              <p className="text-primary text-sm mb-2">{member.role}</p>
-              <p className="text-gray-600">{member.bio}</p>
+              <h3 className="text-xl font-semibold text-gray-800">{member.name}</h3>
+              <p className="text-primary text-sm mb-2 text-gray-700">{member.role}</p>
+              <p className="text-gray-700">{member.bio}</p>
             </div>
           ))}
         </div>
       </div>
     </section>
 
-        <section>
+        <section className="px-4 md-px-0">
           <h2 className="font-manrope font-bold text-4xl lg:text-4xl text-black mb-4 text-center">
             Our <span className="text-secondary">History</span>
           </h2>
@@ -168,17 +168,17 @@ const AboutUs = () => {
       </div>
     </section>
 
-    <section className="py-12 bg-white">
+    <section className="py-12 ">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center">Our Values</h2>
         <p className="text-center text-lg mt-4 mb-8">
           These values define who we are and how we operate.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           {values.map((value, index) => (
-            <div key={index} className="bg-[#CEDF9F]bg-[#CEDF9F] p-6 rounded-lg shadow-lg text-center">
-              <h3 className="text-xl font-semibold mb-4">{value.title}</h3>
-              <p className="text-gray-600">{value.description}</p>
+            <div key={index} className="bg-[#CEDF9F]  p-6 rounded-lg shadow-lg text-center">
+              <h3 className="text-xl text-gray-800 font-semibold mb-4">{value.title}</h3>
+              <p className="text-gray-700">{value.description}</p>
             </div>
           ))}
         </div>

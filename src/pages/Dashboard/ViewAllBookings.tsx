@@ -14,10 +14,10 @@ const ViewAllBookings = () => {
     return <Loading />;
   }
 
-  if (bookings.data.length === 0) {
+  if (bookings?.data?.length === 0) {
     return <NoDataFound message="No Bookings Found" />;
   }
-
+console.log(bookings)
   return (
     <div>
       <div className="w-full py-2 bg-secondary rounded-lg">

@@ -38,17 +38,17 @@ const CreateNewAdmin = () => {
   };
 
   return (
-    <div>
-      <div className="w-full py-2 bg-secondary rounded-lg">
+    <div className="">
+      <div className="w-full py-2 bg-secondary rounded-lg ">
         <h1 className="text-white text-xl text-center">Add a new admin</h1>
       </div>
 
-      <div className="flex justify-center items-center mt-6 w-full md:w-[40%] ml-0 md:ml-5 py-10 px-5 border-2 border-gray-700 rounded-lg">
-        <form className="bg-white" onSubmit={handleCreateAdmin}>
-          <div className="flex items-center border-2 py-2 px-3 border-gray-500 rounded-2xl mb-4">
+      <div className="flex justify-center items-center mt-6  w-full md:w-[50%] lg:[40%] lg:w-[80%] ml-0 md:ml-5 py-10 px-5 border-2 border-[#E8B86D] rounded-lg ">
+        <form className="bg-white w-[80%]" onSubmit={handleCreateAdmin}>
+          <div className="flex items-center border-2 py-2 px-3 border-[#E8B86D] rounded-2xl mb-4 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-500"
+              className="h-5 w-5 text-[#E8B86D]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -68,10 +68,10 @@ const CreateNewAdmin = () => {
             />
           </div>
 
-          <div className="flex items-center border-2 py-2 px-3 border-gray-500 rounded-2xl mb-4">
+          <div className="flex items-center border-2 py-2 px-3 border-[#E8B86D] rounded-2xl mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-500"
+              className="h-5 w-5 text-[#E8B86D]"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -93,10 +93,10 @@ const CreateNewAdmin = () => {
             />
           </div>
 
-          <div className="flex items-center border-2 py-2 px-3 border-gray-500 rounded-2xl mb-4">
+          <div className="flex items-center border-2 py-2 px-3 border-[#E8B86D] rounded-2xl mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-500"
+              className="h-5 w-5 text-[#E8B86D]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -116,10 +116,10 @@ const CreateNewAdmin = () => {
             />
           </div>
 
-          <div className="flex items-center border-2 py-2 px-3 border-gray-500 rounded-2xl mb-4">
+          <div className="flex items-center border-2 py-2 px-3 border-[#E8B86D] rounded-2xl mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-500"
+              className="h-5 w-5 text-[#E8B86D]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -139,10 +139,10 @@ const CreateNewAdmin = () => {
             />
           </div>
 
-          <div className="flex items-center border-2 py-2 px-3 border-gray-500 rounded-2xl mb-4">
+          <div className="flex items-center border-2 py-2 px-3 border-[#E8B86D] rounded-2xl mb-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5 text-gray-500"
+              className="h-5 w-5 text-[#E8B86D]"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -166,7 +166,7 @@ const CreateNewAdmin = () => {
             disabled={isLoading}
             type="submit"
             fullWidth
-            className="bg-button capitalize text-lg"
+            className="bg-[#E8B86D] capitalize text-xl"
             placeholder={undefined}
             onPointerEnterCapture={undefined}
             onPointerLeaveCapture={undefined}

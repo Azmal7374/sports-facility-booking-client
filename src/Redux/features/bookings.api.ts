@@ -11,8 +11,8 @@ const authApi = baseApi.injectEndpoints({
     }),
 
     cancelBooking: builder.mutation({
-      query: (id) => ({
-        url: `/booking/${id}`,
+      query: (_id) => ({
+        url: `/booking/${_id}`,
         method: "DELETE",
       }),
       invalidatesTags: ["bookingsByUser"],
