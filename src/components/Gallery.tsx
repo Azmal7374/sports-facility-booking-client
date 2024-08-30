@@ -9,54 +9,54 @@ import {
 const Gallery = () => {
   const data = [
     {
-      label: "Indoor",
-      value: "indoor",
+      label: "Cricket",
+      value: "cricket",
       images: [
         {
           imageLink:
-            "https://media.istockphoto.com/id/1403237341/photo/urban-jungle.webp?b=1&s=170667a&w=0&k=20&c=JZtSsShaUrpNrVW-ZGaaP9k8OJiuvk4Sz0BUgWpbk6Q=",
+            "https://t3.ftcdn.net/jpg/00/02/77/90/240_F_2779017_89NtlIoBLDjb80jcU0WtHIoBUr5yqr.jpg",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1280154279/photo/give-your-home-a-good-dose-of-greenery.webp?b=1&s=170667a&w=0&k=20&c=-aSyKHwT49vNVoPtW30w0_kQH-pXMHIyQnc6fC-VrvA=",
+            "https://img.freepik.com/free-photo/cricket-match-with-player_23-2151702207.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1166802385/photo/woman-watering-houseplants.webp?b=1&s=170667a&w=0&k=20&c=z_wg3SZzn1nol93h0Hr1w1VHYGCVzyhowYHDYBoTsAU=",
+            "https://img.freepik.com/free-photo/cricket-match-with-player_23-2151702212.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kb29yJTIwcGxhbnRzfGVufDB8fDB8fHww",
+            "https://cdn.britannica.com/63/211663-050-A674D74C/Jonny-Bairstow-batting-semifinal-match-England-Australia-2019.jpg",
         },
         {
           imageLink:
-            "https://plus.unsplash.com/premium_photo-1673203734665-0a534c043b7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5kb29yJTIwcGxhbnRzfGVufDB8fDB8fHww",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-RACG0dG_fCT_hhm-4X8l04Jc3wP4ErgFocK6GWGEOnw_lZulWQerqVawHM5rvNF3uXI&usqp=CAU",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1365516053/photo/green-wall-empty-room-with-plants-on-a-wooden-floor.webp?b=1&s=170667a&w=0&k=20&c=jR1yal3ctlxUbxmMyWtuYEK3wSffDcr06IcAwg2gqBs=",
+            "https://cdn.britannica.com/09/182109-050-2C066432/Quinton-De-Kock-New-Zealand-Ross-Taylor-March-24-2015.jpg",
         },
       ],
     },
     {
-      label: "Outdoor",
-      value: "outdoor",
+      label: "Football",
+      value: "football",
       images: [
         {
           imageLink:
-            "https://media.istockphoto.com/id/690416076/photo/asian-little-girl-and-parent-planting-young-tree-on-black-soil-together.webp?b=1&s=170667a&w=0&k=20&c=j7zmRaZc7ruTOx4BCEUxM6ziQhyjtpD2zrkRXOn4DuY=",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgyDPi5ewgz2K6R1UzKUaP8UjUtDRDNjx74w&s",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1357789296/photo/children-boys-and-girls-help-each-other-plant-trees-in-the-forest-learn-about-the-environment.webp?b=1&s=170667a&w=0&k=20&c=2RH2zBbrpFbZaOhkzRwrgLtls3JjasF1rwHrK94mXiY=",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tqVw0ELoCyiwjvsDbUAMmJwvc5n0QtTs6A&s",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1156537866/photo/man-gardening-background.webp?b=1&s=170667a&w=0&k=20&c=8KggGyUWfhWBDG3ehpmdwU1IFy79NS-QvNmz6M4bjO0=",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJJB22GIaIpXohwlph9sN7JSTrR65SbYDvEw&s",
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1714731596406-e144f725acc7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b3V0ZG9vciUyMHBsYW50c3xlbnwwfHwwfHx8MA%3D%3D",
+            "https://img.freepik.com/free-photo/view-soccer-ball-field-grass_23-2150887547.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
@@ -64,138 +64,109 @@ const Gallery = () => {
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1703430075832-558d2f113566?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fG91dGRvb3IlMjBwbGFudHN8ZW58MHx8MHx8fDA%3D",
+            "https://img.freepik.com/free-photo/front-view-football-trainer-teaching-children_23-2149742028.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
       ],
     },
     {
-      label: "Fruits",
-      value: "fruits",
+      label: "Tennis",
+      value: "tennis",
       images: [
         {
           imageLink:
-            "https://media.istockphoto.com/id/116378367/photo/close-up-of-wet-lime-on-branch.webp?b=1&s=170667a&w=0&k=20&c=yo4PRq7mbYDryJ-hCL0X3BOAg7jazvCFdBNl9jsSt3Y=",
+            "https://img.freepik.com/premium-photo/write-about-doubles-match-where-teamwork-communication-lead-victory_1308549-13604.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/171308173/photo/fresh-organic-strawberry.webp?b=1&s=170667a&w=0&k=20&c=7kBVgyzzJwEfAaJ_ROmdQdYo-OL1L3HofC0vmrVh_yM=",
+            "https://img.freepik.com/premium-photo/portrait-group-tennis-players-court-sunset_1308172-160206.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1171900830/photo/orange-trees.webp?b=1&s=170667a&w=0&k=20&c=2m9oMLQ0gcelL-clayxvM0to-KZKvJbbNnJkLE_xg4s=",
+            "https://img.freepik.com/free-photo/close-up-tennis-rackets-balls-ground_23-2148218722.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1095933940/photo/theyre-all-ripe-and-juicy.webp?b=1&s=170667a&w=0&k=20&c=czsFBMuXLx3CLXo03dtK2FOaZy_VyHoBjiBb9Q1FuW4=",
+            "https://img.freepik.com/premium-photo/tennis-player-preparing-serve-with-racket_1106493-444817.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1251703149/photo/orange-tree-plantation.webp?b=1&s=170667a&w=0&k=20&c=ukhutBtgtE_kjU-DTtupFlaVUOeIkcZmoS4a8dMyxyQ=",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiojUnSoij9t55S7l-M54iMPdcd-BVfRnshg&s",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1177150352/photo/green-hass-avocados-fruit-hanging-in-the-tree.jpg?s=612x612&w=0&k=20&c=Hc6x-9a2MIvLy-Yrb_TdarapUlHR43NfiJfopGeEBd4=",
+            "https://image.shutterstock.com/image-photo/yellow-tennis-ball-racket-lies-260nw-2454442559.jpg",
         },
       ],
     },
     {
-      label: "Flower",
-      value: "flower",
+      label: "Gym",
+      value: "gym",
       images: [
         {
           imageLink:
-            "https://media.istockphoto.com/id/1126841725/photo/spring-meadow.webp?b=1&s=170667a&w=0&k=20&c=T5OOBJu--j-BBnNFCcQNWY2cvxQHysiYvsbE6OHTOiw=",
+            "https://img.freepik.com/free-photo/muscular-man-doing-push-ups-one-hand_7502-4775.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1704813778605-475681242725?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2VyJTIwcGxhbnRzfGVufDB8fDB8fHww",
+            "https://img.freepik.com/free-photo/portrait-young-sportsman-making-cardio-workout-drinking-water-gym_496169-2716.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1620064916958-605375619af8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1493&q=80",
+            "https://img.freepik.com/premium-photo/gym-sports-room-artificial-intelligence-generative_1302830-127.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1711861334703-74990b85860b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZsb3dlciUyMHBsYW50c3xlbnwwfHwwfHx8MA%3D%3D",
+            "https://img.freepik.com/premium-photo/man-training-with-battle-ropes-one-man-strong-man-exercising-with-battle-ropes-gym_629685-101224.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://images.unsplash.com/photo-1694679377215-f2b51995afcd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2VyJTIwcGxhbnRzfGVufDB8fDB8fHww",
+          "https://img.freepik.com/free-photo/athletic-man-practicing-gymnastics-keep-fit_23-2150989961.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid"
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/157523491/photo/gardening-hands.webp?b=1&s=170667a&w=0&k=20&c=UcCgci5C51-lX4dYr9rpCpNb5XxXcWXMEv3OE-tN97o=",
+            "https://img.freepik.com/free-photo/3d-gym-equipment_23-2151114219.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
       ],
     },
+   
     {
-      label: "Aquatic",
-      value: "aquatic",
+      label: "Swimming",
+      value: "swimming",
       images: [
         {
           imageLink:
-            "https://media.istockphoto.com/id/2119097509/photo/lotus.webp?b=1&s=170667a&w=0&k=20&c=7wptakHteNqeKSVkHy_aKrflrwsrMTolXQRw-lva7c0=",
+            "https://img.freepik.com/free-photo/male-athlete-playing-water-polo-indoor-pool_23-2150579131.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1490214908/photo/anubias-barteri.jpg?s=612x612&w=0&k=20&c=GrOfHZ4X3D2UwM3pqoyyAPiifaDneIopCnExQtYyrnc=",
+            "https://t4.ftcdn.net/jpg/02/21/29/19/240_F_221291956_GULkGJM534EK509EoATKSS6mSxqXbKQh.jpg",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1846443302/photo/beautiful-nature-landscape-red-lotus-sea-in-the-morning-thailand-lotus-red-lotus-sea.webp?b=1&s=170667a&w=0&k=20&c=N79sXH36JbQ0aCrmNlYB-qWQVaISD4OnGvKGzjzAZXo=",
+            "https://img.freepik.com/free-photo/swimmer-with-cap-goggles-swimming-water_23-2148687603.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/2119093779/photo/lotus.jpg?s=612x612&w=0&k=20&c=leHEl9pY0_TblLqtOLJ8i-KgIN8OB2iZ8V_dFUeVDgw=",
+            "https://img.freepik.com/free-photo/male-swimmer-swimming-butterfly-stroke_171337-7613.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/1951873475/photo/plants-in-a-home-fish-tank.jpg?s=612x612&w=0&k=20&c=EwEag1YXSc6hC-NJWnsS9no0GHvU4acssk8AYHDs670=",
+            "https://img.freepik.com/free-photo/close-up-man-swimming-lake_23-2148648269.jpg?t=st=1724998520~exp=1725002120~hmac=510747d81b7f40f1aadce8d2e8dbdd4e377e2002d97527ed1a6c070c353386af&w=1060",
         },
         {
           imageLink:
-            "https://media.istockphoto.com/id/146799216/photo/white-lotus-flower-and-leaves.jpg?s=612x612&w=0&k=20&c=-sRSRXMzZFcUY9Y_i2HdSIGL91SWl4efLoxWes2i4Cc=",
-        },
-      ],
-    },
-    {
-      label: "Climbers",
-      value: "climbers",
-      images: [
-        {
-          imageLink:
-            "https://media.istockphoto.com/id/1674139929/photo/kids-climbing-on-a-tree.webp?b=1&s=170667a&w=0&k=20&c=nM_xhaMnxRhha0nTkF2xgHA9fzE0UGi3qLOCx960vbw=",
-        },
-        {
-          imageLink:
-            "https://media.istockphoto.com/id/1432002183/photo/green-leaves-javanese-treebine-or-grape-ivy-jungle-vine-hanging-ivy-plant-bush-isolated-on.webp?b=1&s=170667a&w=0&k=20&c=TcykstAlAIn_bUKt_jcKF_hRlm8-U-2kWA3hdWL-6oE=",
-        },
-        {
-          imageLink:
-            "https://media.istockphoto.com/id/143071967/photo/father-and-son-hugging-in-tree.webp?b=1&s=170667a&w=0&k=20&c=5DgP04hLBUGf8RwXX1DFTiGeGzOTdWx9NLctYC68qAA=",
-        },
-        {
-          imageLink:
-            "https://media.istockphoto.com/id/1219169504/photo/tropical-plants-bush-decor-indoor-garden-houseplant-nature-backdrop-vertical-garden-wall.jpg?s=612x612&w=0&k=20&c=IeTJOnMn5NwhNUQFYXJMu9ONLKZkYBz2SxXtX_d-yO0=",
-        },
-        {
-          imageLink:
-            "https://media.istockphoto.com/id/1674139904/photo/kids-playing-on-a-tree.jpg?s=612x612&w=0&k=20&c=H9QJXj3nOhjxLauqCsI-8GN4YrAaaJv5pb-UkegJW_w=",
-        },
-        {
-          imageLink:
-            "https://media.istockphoto.com/id/2163628856/photo/a-male-proboscis-monkey-in-a-tree-in-the-rainforest-of-tanjung-puting-national-park-on-the.jpg?s=612x612&w=0&k=20&c=zhsLsNdK_w-qc6Rb5FUSfB-jDPeyi_PqyYJld6kJjZA=",
+            "https://img.freepik.com/free-photo/close-up-athlete-swimming_23-2150845596.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid",
         },
       ],
     },
   ];
 
   return (
-    <div className="mx-20 ">
-      <h2 className="text-2xl text-center font-bold text-[#1B3048] lg:text-4xl dark:text-white mb-8">
-        Explore our <span className="text-[#275fa0]">Image Gallery</span>
+    <div className="mx-20  mt-14">
+      <h2 className="text-2xl text-center font-bold text-gray-800 lg:text-4xl dark:text-white mb-6">
+        Explore our Image Gallery
       </h2>
-      <Tabs value="indoor">
+      <Tabs value="cricket">
         <TabsHeader
           placeholder=""
           onPointerEnterCapture={() => {}}

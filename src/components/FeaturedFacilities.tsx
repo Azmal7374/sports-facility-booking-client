@@ -1,149 +1,77 @@
 
+const facilities = [
+  {
+    name: 'Main Hall',
+    description: 'A versatile hall suitable for various sports and events, equipped with the latest facilities.',
+    image: 'https://img.freepik.com/free-photo/navratri-highly-detailed-interior-decoration_23-2151193718.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid',
+    features: ['Multi-sport area', 'Seating for 500', 'Modern sound system'],
+  },
+  {
+    name: 'Swimming Pool',
+    description: 'An Olympic-sized swimming pool with state-of-the-art water filtration and temperature control systems.',
+    image: 'https://img.freepik.com/free-photo/umbrella-chair-around-outdoor-swimming-pool-neary-sea-hotel-resort_74190-9809.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid',
+    features: ['Olympic size', 'Temperature controlled', 'Lifeguard on duty'],
+  },
+  {
+    name: 'Tennis Court',
+    description: 'Well-maintained outdoor and indoor tennis courts with professional-grade surfaces.',
+    image: 'https://img.freepik.com/premium-photo/tennis-background-image-sports-background_1022029-99642.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid',
+    features: ['Indoor & Outdoor', 'Professional surface', 'Night lighting'],
+  },
+  {
+    name: 'Gym',
+    description: 'A fully-equipped gym with the latest fitness machines, free weights, and personal trainers.',
+    image: 'https://img.freepik.com/free-photo/muscular-man-doing-push-ups-one-hand_7502-4775.jpg?uid=R91079514&ga=GA1.1.1302518135.1720608685&semt=ais_hybrid',
+    features: ['Latest equipment', 'Personal trainers', 'Open 24/7'],
+  },
+];
+
+const FacilityCard = ({ facility }: { facility: typeof facilities[0] }) => {
+  return (
+    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <img src={facility.image} alt={facility.name} className="w-full h-48 object-cover" />
+      <div className="p-6">
+        <h3 className="text-2xl font-bold text-gray-800">{facility.name}</h3>
+        <p className="text-gray-700 mt-2">{facility.description}</p>
+        <ul className="mt-4 space-y-2">
+          {facility.features.map((feature, index) => (
+            <li key={index} className="flex items-center text-gray-700">
+              <svg
+                className="w-5 h-5 mr-2 text-[#E8B86D]"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M16.707 5.293a1 1 0 00-1.414 0L9 11.586 4.707 7.293a1 1 0 00-1.414 1.414l5 5a1 1 0 001.414 0l7-7a1 1 0 000-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
 const FeaturedFacilities = () => {
-    return (
-      <div className="mt-20 pb-20">
-        <div className="mb-2 flex items-center justify-center gap-8 ">
-          <div className="flex items-center justify-center gap-12">
-            <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl dark:text-white">
-              Featured <span className="text-secondary">Facilities</span>
-            </h2>
-          </div>
-        </div>
-  
-        <div className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 p-4 md:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-xl  p-3 shadow-lg hover:shadow-xl">
-            <div className="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://images.pexels.com/photos/3448250/pexels-photo-3448250.jpeg?cs=srgb&dl=pexels-tomfisk-3448250.jpg&fm=jpg"
-                alt="Hotel Photo"
-                className="h-[200px] w-full"
-              />
-            </div>
-            <div className="mt-1 p-2">
-              <h2 className="text-gray-800 text-2xl font-bold text-center">
-              State-of-the-Art Gymnasium
-              </h2>
-  
-              <p className="text-[1rem] text-gray-700 font-medium mt-3">
-                A state-of-the-art football field with pristine grass turf,
-                perfect for both amateur and professional matches. Fully equipped
-                with floodlights and spectator stands.
-              </p>
-            </div>
-          </div>
-  
-          <div className="rounded-xl p-3 shadow-lg hover:shadow-xl">
-            <div className="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://t4.ftcdn.net/jpg/02/86/26/29/360_F_286262907_RyWIeoVHHhd8BBrgCVpLmGjrqq1ZmfT3.jpg"
-                alt="Hotel Photo"
-                className="h-[200px] w-full"
-              />
-            </div>
-            <div className="mt-1 p-2">
-              <h2 className="text-gray-800 text-2xl font-bold text-center">
-              Olympic-Sized Swimming Pool
-              </h2>
-  
-              <p className="text-[1rem] text-gray-700 font-medium mt-3">
-                Enjoy a game of tennis on our high-quality clay courts, designed
-                for optimal performance and comfort. Available for singles and
-                doubles matches, with seating areas for viewers.
-              </p>
-            </div>
-          </div>
-  
-          <div className="rounded-xl  p-3 shadow-lg hover:shadow-xl">
-            <div className="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItJlZqKrDgheO01saGMICLI7ZktDWVz1jqJ_IjDBwhgVTwD1LOwvujuTgqGjKpI7l0Ls&usqp=CAU"
-                alt="Hotel Photo"
-                className="h-[200px] w-full"
-              />
-            </div>
-            <div className="mt-1 p-2">
-              <h2 className="text-gray-800 text-2xl font-bold text-center">
-              Indoor and Outdoor Tennis Courts
-              </h2>
-  
-              <p className="text-[1rem] text-gray-700 font-medium mt-3">
-                Our indoor hockey arena features a smooth, well-maintained rink
-                with top-tier facilities, including locker rooms and
-                professional-grade goals. Ideal for competitive and recreational
-                play.
-              </p>
-            </div>
-          </div>
-
-          <div className="rounded-xl  p-3 shadow-lg hover:shadow-xl">
-            <div className="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItJlZqKrDgheO01saGMICLI7ZktDWVz1jqJ_IjDBwhgVTwD1LOwvujuTgqGjKpI7l0Ls&usqp=CAU"
-                alt="Hotel Photo"
-                className="h-[200px] w-full"
-              />
-            </div>
-            <div className="mt-1 p-2">
-              <h2 className="text-gray-800 text-2xl font-bold text-center">
-               Multi-Sport Arena
-              </h2>
-  
-              <p className="text-[1rem] text-gray-700 font-medium mt-3">
-                Our indoor hockey arena features a smooth, well-maintained rink
-                with top-tier facilities, including locker rooms and
-                professional-grade goals. Ideal for competitive and recreational
-                play.
-              </p>
-            </div>
-          </div>
-
-          <div className="rounded-xl  p-3 shadow-lg hover:shadow-xl">
-            <div className="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItJlZqKrDgheO01saGMICLI7ZktDWVz1jqJ_IjDBwhgVTwD1LOwvujuTgqGjKpI7l0Ls&usqp=CAU"
-                alt="Hotel Photo"
-                className="h-[200px] w-full"
-              />
-            </div>
-            <div className="mt-1 p-2">
-              <h2 className="text-gray-800 text-2xl font-bold text-center">
-              Soccer Fields
-              </h2>
-  
-              <p className="text-[1rem] text-gray-700 font-medium mt-3">
-                Our indoor hockey arena features a smooth, well-maintained rink
-                with top-tier facilities, including locker rooms and
-                professional-grade goals. Ideal for competitive and recreational
-                play.
-              </p>
-            </div>
-          </div>
-          
-          <div className="rounded-xl  p-3 shadow-lg hover:shadow-xl">
-            <div className="relative flex items-end overflow-hidden rounded-xl">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTItJlZqKrDgheO01saGMICLI7ZktDWVz1jqJ_IjDBwhgVTwD1LOwvujuTgqGjKpI7l0Ls&usqp=CAU"
-                alt="Hotel Photo"
-                className="h-[200px] w-full"
-              />
-            </div>
-            <div className="mt-1 p-2">
-              <h2 className="text-gray-800 text-2xl font-bold text-center">
-              Squash and Racquetball Courts
-              </h2>
-  
-              <p className="text-[1rem] text-gray-700 font-medium mt-3">
-                Our indoor hockey arena features a smooth, well-maintained rink
-                with top-tier facilities, including locker rooms and
-                professional-grade goals. Ideal for competitive and recreational
-                play.
-              </p>
-            </div>
-          </div>
+  return (
+    <section className="mt-20 py-12">
+      <div className="container mx-auto px-6">
+        <h2 className="text-2xl lg:text-4xl font-bold text-center text-gray-800">Featured Facilities</h2>
+        <p className="text-center text-lg lg:text-xl mt-4 mb-8 text-gray-700">
+          Explore our top-notch facilities that cater to all your sports and fitness needs.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {facilities.map((facility, index) => (
+            <FacilityCard key={index} facility={facility} />
+          ))}
         </div>
       </div>
-    );
-  };
-  
-  export default FeaturedFacilities;
-  
+    </section>
+  );
+};
+
+export default FeaturedFacilities;

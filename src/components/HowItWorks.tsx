@@ -1,6 +1,6 @@
 const HowItWorks = () => {
     return (
-      <div className="mt-9 pb-20">
+      <div className="mt-10 ">
         <div className="mb-4 flex items-center justify-center gap-8 sm:mb-8 md:mb-5">
           <div className="flex items-center justify-center gap-12">
             <h2 className="text-2xl font-bold text-gray-800 lg:text-4xl dark:text-white">
@@ -32,7 +32,7 @@ const HowItWorks = () => {
                   </svg>
                 </div>
               </div>
-              <div className="h-full w-px bg-gray-400 dark:bg-slate-500"></div>
+              <div className="h-full w-px bg-[#E8B86D] dark:bg-slate-500"></div>
             </div>
             <div className="pt-1 pb-8">
               <p className="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
@@ -67,7 +67,7 @@ const HowItWorks = () => {
                   </svg>
                 </div>
               </div>
-              <div className="h-full w-px bg-gray-400 dark:bg-slate-500"></div>
+              <div className="h-full w-px bg-[#E8B86D] dark:bg-slate-500"></div>
             </div>
             <div className="pt-1 pb-8">
               <p className="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
@@ -102,7 +102,7 @@ const HowItWorks = () => {
                   </svg>
                 </div>
               </div>
-              <div className="h-full w-px bg-gray-400 dark:bg-slate-500"></div>
+              <div className="h-full w-px bg-[#E8B86D] dark:bg-slate-500"></div>
             </div>
             <div className="pt-1 pb-8">
               <p className="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">
@@ -136,7 +136,7 @@ const HowItWorks = () => {
                   </svg>
                 </div>
               </div>
-              <div className="h-full w-px bg-gray-400 dark:bg-slate-500"></div>
+              <div className="h-full w-px bg-[#E8B86D] dark:bg-slate-500"></div>
             </div>
             <div className="pt-1 pb-8">
               <p className="mb-2 text-xl font-bold text-gray-900 dark:text-slate-300">

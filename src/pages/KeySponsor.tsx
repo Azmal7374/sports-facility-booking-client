@@ -39,11 +39,11 @@ const sponsors = [
 
 const KeySponsor = () => {
   return (
-    <div className="max-w-7xl mx-auto px-8 mt-28 ">
-        <h1 className="text-4xl font-bold mb-5  font-Poppins mobile:text-xl text-center text-gray-800 dark:text-white">
+    <div className="max-w-7xl mx-auto px-8 mt-10 mb-10 ">
+        <h1 className="text-2xl md:text-4xl font-bold mb-5  font-Poppins mobile:text-xl text-center text-gray-800 dark:text-white">
           Leading Key Sponsor Companies
         </h1>
-        <p className=" font-Jost mb-10 text-center text-gray-700 dark:text-white">
+        <p className=" font-Jost mb-10 text-center text-gray-700 text-lg lg:text-xl dark:text-white">
           Our Esteemed Sponsor Companies Shaping the Future of Booking.
         </p>
       <div className=" mx-auto">
